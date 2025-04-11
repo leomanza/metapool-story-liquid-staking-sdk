@@ -1,4 +1,8 @@
 import { Contract } from "ethers";
+export interface ContractInstance {
+    contract: Contract;
+    address: string;
+}
 export interface StakedIPConfig {
     address: string;
     provider: any;
@@ -19,7 +23,8 @@ export interface WIPConfig {
     provider: any;
     signer?: any;
 }
-export interface ContractInstance {
-    contract: Contract;
+export interface IPTokenConfig {
     address: string;
+    provider: any;
+    signer?: any;
 }
